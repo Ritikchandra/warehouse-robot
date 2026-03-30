@@ -16,9 +16,7 @@ def animate(grid, explored, path):
 
     pygame.time.delay(1000)
 
-    # =========================
-    # ❌ NO PATH CASE
-    # =========================
+   
     if path is None:
         running = True
 
@@ -54,11 +52,9 @@ def animate(grid, explored, path):
                     running = False
 
         pygame.quit()
-        return   # ✅ NOW correctly inside function
+        return  
 
-    # =========================
-    # ✅ NORMAL ANIMATION
-    # =========================
+ 
     i = 0
     running = True
 
