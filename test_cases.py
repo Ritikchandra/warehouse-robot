@@ -31,7 +31,7 @@ def hard():
     )
 
 
-# ================= NEW TEST CASES =================
+
 
 def no_path():
     return dict(
@@ -132,7 +132,7 @@ def straight_vs_detour():
 
 # ================= SMALL FAST TEST CASES =================
 
-# 🟢 1. Very simple (baseline)
+
 def small_easy():
     return dict(
         n=5,
@@ -144,7 +144,7 @@ def small_easy():
     )
 
 
-# 🟡 2. Small obstacle navigation
+
 def small_obstacle():
     return dict(
         n=6,
@@ -156,14 +156,14 @@ def small_obstacle():
     )
 
 
-# 🔴 3. Trade-off (near vs far)
+
 def small_tradeoff():
     return dict(
         n=6,
         obstacles=set(),
         items={
-            (1,1):2,   # near low value
-            (4,4):10   # far high value
+            (1,1):2,   
+            (4,4):10  
         },
         start=(0,0),
         goal=(5,5),
@@ -171,7 +171,7 @@ def small_tradeoff():
     )
 
 
-# 4. Tight energy (forces choice)
+
 def small_energy():
     return dict(
         n=6,
@@ -179,11 +179,11 @@ def small_energy():
         items={(1,4):5,(4,1):6},
         start=(0,0),
         goal=(5,5),
-        energy=12  # cannot collect both
+        energy=12  
     )
 
 
-# 🟣 5. Mini maze
+
 def small_maze():
     return dict(
         n=7,
@@ -195,11 +195,11 @@ def small_maze():
     )
 
 
-# ⚫ 6. No path (blocked)
+
 def small_no_path():
     return dict(
         n=6,
-        obstacles={(3,i) for i in range(6)},  # full wall
+        obstacles={(3,i) for i in range(6)},  
         items={(1,1):5},
         start=(0,0),
         goal=(5,5),
@@ -207,7 +207,7 @@ def small_no_path():
     )
 
 
-# 🟠 7. Multiple items (still small)
+
 def small_many_items():
     return dict(
         n=7,
